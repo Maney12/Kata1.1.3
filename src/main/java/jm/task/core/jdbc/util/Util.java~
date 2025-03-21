@@ -16,16 +16,16 @@ public class Util {
         }
     }
 
-    public static void main(String[] args) {
-        try{
-            Connection connection = getConnection();
-            System.out.printf("Успешное подключение к БД");
-            connection.close();
-        }
-        catch (SQLException e){
-            System.out.printf("Ошибка подключения к БД", e);
-        }
-    }
+//    public static void main(String[] args) {
+//        try{
+//            Connection connection = getConnection();
+//            System.out.printf("Успешное подключение к БД");
+//            connection.close();
+//        }
+//        catch (SQLException e){
+//            System.out.printf("Ошибка подключения к БД", e);
+//        }
+//    }
 
 
 }
