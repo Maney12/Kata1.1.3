@@ -1,7 +1,9 @@
 package jm.task.core.jdbc.util;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 public class Util {
     // реализуйте настройку соединения с БД
     private static final String URL = "jdbc:mysql://localhost:3306/test_schema";
@@ -17,12 +19,11 @@ public class Util {
     }
 
     public static void main(String[] args) {
-        try{
+        try {
             Connection connection = getConnection();
             System.out.printf("Успешное подключение к БД");
             connection.close();
-        }
-        catch (SQLException e){
+        } catch (SQLException e) {
             System.out.printf("Ошибка подключения к БД", e);
         }
     }
