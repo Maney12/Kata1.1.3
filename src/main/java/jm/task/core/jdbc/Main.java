@@ -1,4 +1,5 @@
 package jm.task.core.jdbc;
+
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
@@ -18,6 +19,7 @@ public class Main {
         service.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
         service.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
         service.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+        service.removeUserById(user1.getId());
 
 
         System.out.println(service.getAllUsers());
